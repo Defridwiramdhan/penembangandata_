@@ -1,0 +1,828 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Repository Untuk Tugas">
+      
+      
+        <link rel="canonical" href="https://mareta.kurnia.github.io/Statistik Deskriptif/">
+      
+      
+        <meta name="author" content="Mareta Kurnia Sari">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>statistika deskriptif - (180411100090) Mareta Kurnia Sari</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+      <link rel="manifest" href="../manifest.webmanifest">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-XXXXXXXX-X", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#mean" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://mareta.kurnia.github.io/" title="(180411100090) Mareta Kurnia Sari" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              (180411100090) Mareta Kurnia Sari
+            </span>
+            <span class="md-header-nav__topic">
+              
+                statistika deskriptif
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/maretakurnisari/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Mareta Kurnia Sari
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://mareta.kurnia.github.io/" title="(180411100090) Mareta Kurnia Sari" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    (180411100090) Mareta Kurnia Sari
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/maretakurnisari/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Mareta Kurnia Sari
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="index" class="md-nav__link">
+      index
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        statistika deskriptif
+      </label>
+    
+    <a href="./" title="statistika deskriptif" class="md-nav__link md-nav__link--active">
+      statistika deskriptif
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mean" class="md-nav__link">
+    Mean
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#median" class="md-nav__link">
+    Median
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modus" class="md-nav__link">
+    Modus
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#varians" class="md-nav__link">
+    Varians¶
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standar-deviasi" class="md-nav__link">
+    Standar Deviasi
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#skewness" class="md-nav__link">
+    Skewness¶
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quartile" class="md-nav__link">
+    Quartile
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#penerapan-statistik-deskriptif-menggunakan-python" class="md-nav__link">
+    Penerapan Statistik Deskriptif Menggunakan Python
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alat-dan-bahan" class="md-nav__link">
+    Alat dan Bahan :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#langkah-langkah" class="md-nav__link">
+    Langkah-Langkah
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reverensi" class="md-nav__link">
+    Reverensi
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mean" class="md-nav__link">
+    Mean
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#median" class="md-nav__link">
+    Median
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modus" class="md-nav__link">
+    Modus
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#varians" class="md-nav__link">
+    Varians¶
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standar-deviasi" class="md-nav__link">
+    Standar Deviasi
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#skewness" class="md-nav__link">
+    Skewness¶
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quartile" class="md-nav__link">
+    Quartile
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#penerapan-statistik-deskriptif-menggunakan-python" class="md-nav__link">
+    Penerapan Statistik Deskriptif Menggunakan Python
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alat-dan-bahan" class="md-nav__link">
+    Alat dan Bahan :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#langkah-langkah" class="md-nav__link">
+    Langkah-Langkah
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reverensi" class="md-nav__link">
+    Reverensi
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/maretakurnisari/edit/master/docs/Statistik Deskriptif.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>statistika deskriptif</h1>
+                
+                <p>Statistika Deskriptif</p>
+<p>Pengertian :</p>
+<p>Statistika Deskriptif adalah metode representasi keseluruhan himpunandata spesifik dengan memberikan ringkasa pendek dan ukuran data.</p>
+<p>Statistika Deskriptif juga merupakan metode sederhana hanya mendeskriptiskan kondisi dari data yang dimiliki dalam tabeldiagram grafik dan lainnya yang ditampilkan dalam uraian singkat dan terbatas.</p>
+<p>Tipe Statistik Deskriptif :</p>
+<h2 id="mean">Mean<a class="headerlink" href="#mean" title="Permanent link">&para;</a></h2>
+<p>Mean merupakan rata-rata keseluruhan angka.Mean didapatkan dari hasil penjumlahan dari keseluruhanangka yang dibagi dengan banyaknya angka itu sendiri.Untuk menghitung data,kita misalkan N data rumus berikut</p>
+<p>​ <br />
+$$
+\bar x ={\sum \limits_{i=1}^{n} x_i \over N} = {x_1 + x_2 + x_3 + ... + x_n \over N}
+$$
+Keterangan :</p>
+<p>x bar = x rata-rata =nilai rata-rata sampel</p>
+<p>x = data ke n</p>
+<p>n = banyak data</p>
+<h2 id="median">Median<a class="headerlink" href="#median" title="Permanent link">&para;</a></h2>
+<p>Median Merupakan nilai tengah dari sebuah urutan data, median disimbolkan dengan me, Nilaidari Median akan samadengan nilai Quartil 2/Q2.dan dalam mencari median yang banyak n dari data ganjil dan genap memiliki cara perhitungan yang berbeda,dengan rumus sebagai berikut :
+$$
+Me=Q_2 =\left( \begin{matrix}   n+1 \over 2 \end{matrix} \right), jika\quad n\quad ganjil
+$$</p>
+<p>$$
+Me=Q_2 =\left( \begin{matrix}   {xn \over 2 } {xn+1\over 2} \over 2 \end{matrix} \right), jika\quad n\quad genap
+$$</p>
+<p>Keterangan :</p>
+<p>Me = Nilai tengah dari kelompok data</p>
+<p>N = banyak data</p>
+<h2 id="modus">Modus<a class="headerlink" href="#modus" title="Permanent link">&para;</a></h2>
+<p>Modus merupakan nilai atau angka yang paling sering ditemukan dalam sebuah kelompok angka, atau data yang paling sering muncul, atau memiliki frekuensi tertinggi. Modus bisa dilambangkan dengan Mo. Dan dapat dihitung dengan rumus berikut : 
+$$
+M_o = Tb + p{b_1 \over b_1 + b_2}
+$$</p>
+<p>Keterangan :</p>
+<p>Mo = modusdari kelompok data</p>
+<p>Tb= Tepi bawah dari elemen modus</p>
+<p>B1 = selisih frekuensi antara elemen modus dengan elemet sebelumnya</p>
+<p>B2 = selisih frekuensi antara elemen modus dengan elemen sesudahnya</p>
+<p>p = panjang interval</p>
+<p>nilai B1 dan B2 -&gt; adalah mutlak atau selalu positif</p>
+<h4 id="varians">Varians<a href="https://maretakurniasari.github.io/mareta.kurnia.github.io/Statistika Deskriptif/#varians">¶</a><a class="headerlink" href="#varians" title="Permanent link">&para;</a></h4>
+<p>Varians yaitu ukuran penyebaran setiap nilai dalam suatu himpunan data dari rata-rata. proses mencari varian terdapat langkah yang harus dilakukan, mengambil ukuran jarak dari setiap nilai atau mengurangi rata-rata dari setiap nilai dalam data, kemudian hasil dari ukuran jarak tersebut dikuadratkan dan membagi jumlah kuadrat dengan jumlah nilai dalam himpunan data. Dan dapat dihitung dengan rumus berikut : 
+$$
+\sigma^2 = {\sum \limits_{i=1}^{n} (x_i - \bar x)^2 \over n}
+$$
+  Keterangan :</p>
+<p>Xi = titik data</p>
+<p>X bar = rata-rata dari sebuah titik data</p>
+<p>n = banyak dari anggota data</p>
+<h2 id="standar-deviasi">Standar Deviasi<a class="headerlink" href="#standar-deviasi" title="Permanent link">&para;</a></h2>
+<p>Standar deviasi merupakan simpanan baku atau ukuran dispersi kumpulandata relatif terhadap rata-rata atau lebih simplenya adalah akar kuadrat positif dari varian.dan dapat dihitung dengan rumus berikut:
+$$
+\sigma^ = \sqrt {{\sum \limits_{i=1}^{n} (x_i - \bar x)^2 \over n}}
+$$
+Keterangan :</p>
+<p>x1 = nilai x ke i</p>
+<p>x = rata-rata</p>
+<p>n = ukuran sampel</p>
+<h4 id="skewness">Skewness<a href="https://maretakurniasari.github.io/mareta.kurnia.github.io/Statistika Deskriptif/#skewness">¶</a><a class="headerlink" href="#skewness" title="Permanent link">&para;</a></h4>
+<p>Skewness adalah merupakan kemiringan atau ketidak simetrisan pada suatu distribusi statistic yaitu dimana kurva tampak condong ke kiri atau ke kanan. Skewness digunakan untuk menentukan seberapa jauh mana perbedaan suatu distribusi dengan distribusi normal. Dalam distribusi normal grafik muncul seperti kurva berbentuk lonceng. Skewness dapat dihitung menggunakan rumus sebagai berikut: 
+$$
+Skewness = {\sum \limits{i=1}^n (x_i - \bar x)^i \over (n- 1) \sigma^3}
+$$
+ Keterangan :</p>
+<p>Xi = titik data </p>
+<p>x bar = rata rata dari distribusi </p>
+<p>n= jumlah titik dalam distribusi </p>
+<p>o = standar deviasi</p>
+<h2 id="quartile">Quartile<a class="headerlink" href="#quartile" title="Permanent link">&para;</a></h2>
+<p>Quartile adalah merupakan nilai-nilai yang membagikan data yang telah diurutkan kedalam 4 bagian yang sama besar. Kuartil dinotasikan dengan mengunakan notasi Q. Kuartil terdiri dari 3, yaitu kuartil satu Q1, kuartil dua Q2, dan kuartil tiga Q3. Untuk menentukan kuartil kepada data tunggal, kita harus mempertimbangkan banyaknya data n terlebih dahulu. Penghitungan quartil tergantung dari kondisi banyaknya data tersebut, untuk mencari quatile kita dapat menggunakan rumus berikut ini: 
+$$
+Q_1 = (n + 1) {1\over 4}
+$$</p>
+<p>$$
+Q_2 = (n + 1) {1\over 2}
+$$</p>
+<p>$$
+Q_3 = (n + 1) {3\over 4}
+$$
+Keterangan :</p>
+<p>Q = nilai Quartil</p>
+<p>N = banyak data</p>
+<h3 id="penerapan-statistik-deskriptif-menggunakan-python">Penerapan Statistik Deskriptif Menggunakan Python<a class="headerlink" href="#penerapan-statistik-deskriptif-menggunakan-python" title="Permanent link">&para;</a></h3>
+<h4 id="alat-dan-bahan">Alat dan Bahan :<a class="headerlink" href="#alat-dan-bahan" title="Permanent link">&para;</a></h4>
+<p>Pada penerapan tersebut menggunakan 100 data random yang disimpan dalam bentuk .csv untuk mempermudah dalam penerapan tersebut, dan perlu disiapkan library python yang dapat didownload secara gratis.</p>
+<p>Library python dapat digunakan adalah sebagai berikut :</p>
+<p>1.Pandas, dapat digunakan untuk data manajemen dan data analysis.</p>
+<p>2.Scipy, adalah merupakan library berisi kumpulan algoritma atau fungsi matematika.</p>
+<h2 id="langkah-langkah">Langkah-Langkah<a class="headerlink" href="#langkah-langkah" title="Permanent link">&para;</a></h2>
+<p>Pertama</p>
+<p>Pertama-tama masukan library yang sudah disiapkan</p>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">states</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+</pre></div>
+
+
+<p>Kedua</p>
+<p>Selanjutnya memuat data Csv yang telah disiapkan</p>
+<div class="codehilite"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span>
+</pre></div>
+
+
+<p>code gabungan dari hasil di atas.</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;Book2.xlsx&#39;</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;stats&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Min&#39;</span><span class="p">,</span><span class="s1">&#39;Max&#39;</span><span class="p">,</span><span class="s1">&#39;Mean&#39;</span><span class="p">,</span><span class="s1">&#39;Standard Deviasi&#39;</span><span class="p">,</span><span class="s1">&#39;Variasi&#39;</span><span class="p">,</span><span class="s1">&#39;Skewnes&#39;</span><span class="p">,</span><span class="s1">&#39;Quantile 1&#39;</span><span class="p">,</span><span class="s1">&#39;Quantile 2&#39;</span><span class="p">,</span>
+                  <span class="s1">&#39;Quantile 3&#39;</span><span class="p">,</span><span class="s1">&#39;Median&#39;</span><span class="p">,</span><span class="s1">&#39;Modus&#39;</span><span class="p">]}</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+    <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">df</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">df</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="nb">round</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">std</span><span class="p">(),</span><span class="mi">2</span><span class="p">),</span> <span class="nb">round</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">var</span><span class="p">(),</span><span class="mi">2</span><span class="p">),</span>
+               <span class="nb">round</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">skew</span><span class="p">(),</span><span class="mi">2</span><span class="p">),</span> <span class="n">df</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.25</span><span class="p">),</span><span class="n">df</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.5</span><span class="p">),</span><span class="n">df</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.75</span><span class="p">),</span> 
+               <span class="n">df</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span> <span class="n">stats</span><span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">.</span><span class="n">mode</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+<span class="n">tes</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">tes</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">hide_index</span><span class="p">()</span>
+</pre></div>
+
+
+<p>Berikut hasil gabungan dari codeyang telah di buat untuk menampilkan program tabel dibawah ini :</p>
+<style  type="text/css" >
+</style>
+
+<table id="T_7a4046be_d53c_11e9_8870_c7ea02e7aad0" ><thead>    <tr>        <th class="col_heading level0 col0" >stats</th>        <th class="col_heading level0 col1" >ALPRO</th>        <th class="col_heading level0 col2" >LOGIKA </th>        <th class="col_heading level0 col3" >PTI</th>        <th class="col_heading level0 col4" >B.ING</th>    </tr></thead><tbody>            
+<tr>
+                            <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow0_col0" class="data row0 col0" >Min</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow0_col1" class="data row0 col1" >0</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow0_col2" class="data row0 col2" >0</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow0_col3" class="data row0 col3" >0</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow0_col4" class="data row0 col4" >0</td>
+        </tr>
+        <tr>
+                            <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow1_col0" class="data row1 col0" >Max</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow1_col1" class="data row1 col1" >4</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow1_col2" class="data row1 col2" >4</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow1_col3" class="data row1 col3" >4</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow1_col4" class="data row1 col4" >4</td>
+        </tr>
+        <tr>
+                            <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow2_col0" class="data row2 col0" >Mean</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow2_col1" class="data row2 col1" >2.05611</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow2_col2" class="data row2 col2" >2.02605</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow2_col3" class="data row2 col3" >1.98196</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow2_col4" class="data row2 col4" >1.9519</td>
+        </tr>
+        <tr>
+                            <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow3_col0" class="data row3 col0" >Standard Deviasi</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow3_col1" class="data row3 col1" >1.42</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow3_col2" class="data row3 col2" >1.39</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow3_col3" class="data row3 col3" >1.46</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow3_col4" class="data row3 col4" >1.42</td>
+        </tr>
+        <tr>
+                            <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow4_col0" class="data row4 col0" >Variasi</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow4_col1" class="data row4 col1" >2</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow4_col2" class="data row4 col2" >1.94</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow4_col3" class="data row4 col3" >2.13</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow4_col4" class="data row4 col4" >2.03</td>
+        </tr>
+        <tr>
+                            <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow5_col0" class="data row5 col0" >Skewnes</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow5_col1" class="data row5 col1" >-0.04</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow5_col2" class="data row5 col2" >-0.03</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow5_col3" class="data row5 col3" >0.03</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow5_col4" class="data row5 col4" >0.08</td>
+        </tr>
+        <tr>
+                            <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow6_col0" class="data row6 col0" >Quantile 1</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow6_col1" class="data row6 col1" >1</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow6_col2" class="data row6 col2" >1</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow6_col3" class="data row6 col3" >1</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow6_col4" class="data row6 col4" >1</td>
+        </tr>
+        <tr>
+                            <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow7_col0" class="data row7 col0" >Quantile 2</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow7_col1" class="data row7 col1" >2</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow7_col2" class="data row7 col2" >2</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow7_col3" class="data row7 col3" >2</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow7_col4" class="data row7 col4" >2</td>
+        </tr>
+        <tr>
+                            <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow8_col0" class="data row8 col0" >Quantile 3</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow8_col1" class="data row8 col1" >3</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow8_col2" class="data row8 col2" >3</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow8_col3" class="data row8 col3" >3</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow8_col4" class="data row8 col4" >3</td>
+        </tr>
+        <tr>
+                            <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow9_col0" class="data row9 col0" >Median</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow9_col1" class="data row9 col1" >2</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow9_col2" class="data row9 col2" >2</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow9_col3" class="data row9 col3" >2</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow9_col4" class="data row9 col4" >2</td>
+        </tr>
+        <tr>
+                            <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow10_col0" class="data row10 col0" >Modus</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow10_col1" class="data row10 col1" >4</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow10_col2" class="data row10 col2" >3</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow10_col3" class="data row10 col3" >0</td>
+                    <td id="T_c5591dd0_cff5_11e9_9d00_94b86d07f43arow10_col4" class="data row10 col4" >1</td>
+        </tr>
+</tbody></table>
+
+<h2 id="reverensi">Reverensi<a class="headerlink" href="#reverensi" title="Permanent link">&para;</a></h2>
+<ol>
+<li>https://id.wikipedia.org/wiki/statistika_deskriptif</li>
+<li>https://rusmus.co.id/mean-median-modus-data-kelompok/</li>
+<li>http://emerer.com/cara-menghitung-median-modus-mode-kuartil-dan-desil/</li>
+<li>https://carasiiumi.com/cara-menghitung-standar-deviasi/</li>
+<li>http://muhammadsurindra.blogspot.com/2015/11/tugas2-pengantar-statistika-kaliini.html</li>
+</ol>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="index" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                index
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2019 - 2020 Mareta Kurnia Sari
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/maretakurniasari" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/maretakurniasari" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/maretakurniasari" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.c648116f.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
