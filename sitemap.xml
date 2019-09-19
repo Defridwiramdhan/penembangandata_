@@ -2,12 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://defridwiramdhan.github.io/penembangandata_/</loc>
-     <lastmod>2019-09-12</lastmod>
+     <lastmod>2019-09-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://defridwiramdhan.github.io/penembangandata_/Statistik Deskriptif/</loc>
-     <lastmod>2019-09-12</lastmod>
+     <lastmod>2019-09-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://defridwiramdhan.github.io/penembangandata_/Tugas 2 - Mengukur Jarak/</loc>
+     <lastmod>2019-09-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://defridwiramdhan.github.io/penembangandata_/Tugas 3 - Missing Value with KNN/</loc>
+     <lastmod>2019-09-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
