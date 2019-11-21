@@ -2,37 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://defridwiramdhan.github.io/penembangandata_/</loc>
-     <lastmod>2019-11-14</lastmod>
+     <lastmod>2019-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://defridwiramdhan.github.io/penembangandata_/Statistik Deskriptif/</loc>
-     <lastmod>2019-11-14</lastmod>
+     <lastmod>2019-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://defridwiramdhan.github.io/penembangandata_/Tugas 2 - Mengukur Jarak/</loc>
-     <lastmod>2019-11-14</lastmod>
+     <lastmod>2019-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://defridwiramdhan.github.io/penembangandata_/Tugas 3 - Missing Value with KNN/</loc>
-     <lastmod>2019-11-14</lastmod>
+     <lastmod>2019-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://defridwiramdhan.github.io/penembangandata_/DECISION TREE/</loc>
-     <lastmod>2019-11-14</lastmod>
+     <lastmod>2019-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://defridwiramdhan.github.io/penembangandata_/Tugas 5 - Clustering/</loc>
-     <lastmod>2019-11-14</lastmod>
+     <lastmod>2019-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://defridwiramdhan.github.io/penembangandata_/Tugas 6 - Fuzzy C-Means/</loc>
-     <lastmod>2019-11-14</lastmod>
+     <lastmod>2019-11-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://defridwiramdhan.github.io/penembangandata_/Tugas 7 - Regresi Linier Sederhana dan Berganda/</loc>
+     <lastmod>2019-11-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
